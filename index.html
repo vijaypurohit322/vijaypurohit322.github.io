@@ -248,11 +248,12 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Analyzing Message Data for Disaster Response</h3>
                             <div class="subheading mb-3">Description : </div>
-                                <div>In this project, I use the data to answer 2 business questions:
-                                    <br/>
-                                    a. What are the main drivers of an effective offer on the Starbucks app?
-                                    <br/>
-                                    b. Could the data provided, namely offer characteristics and user demographics, predict whether a user would take up an offer?
+                                <div>In this project, we will build a model to classify messages that are sent during disasters.
+                                    There are 36 pre-defined categories, and examples of these categories include Aid Related, Medical Help, Search And Rescue, etc.
+                                    By classifying these messages, we can allow these messages to be sent to the appropriate disaster relief agency.
+                                    This project will involve the building of a basic ETL and Machine Learning pipeline to facilitate the task. 
+                                    This is also a multi-label classification task, since a message can belong to one or more categories. 
+                                    We will be working with a data set provided by Figure Eight containing real messages that were sent during disaster events.
                                 </div>
                                 <p>This project was written in Python, using Jupyter Notebook on Anaconda. The relevant Python packages for this project are as follows:
                                 <ul class="fa-ul mb-0">
@@ -266,48 +267,33 @@
                                     </li>
                                     <li>
                                         <span class="fa-li"><i class="fas fa-check"></i></span>
-                                            math
+                                            sqlalchemy
                                     </li>
                                     <li>
                                         <span class="fa-li"><i class="fas fa-check"></i></span>
-                                            json
+                                            re
                                     </li>
                                     <li>
                                         <span class="fa-li"><i class="fas fa-check"></i></span>
-                                            sklearn.model_selection (train_test_split module)
+                                            NLTK
                                     </li>
                                     <li>
                                         <span class="fa-li"><i class="fas fa-check"></i></span>
-                                            sklearn.preprocessing (StandardScaler, PolynomialFeatures)
+                                            pickle
                                     </li>
                                     <li>
                                         <span class="fa-li"><i class="fas fa-check"></i></span>
-                                            from sklearn.tree (DecisionTreeClassifier,DecisionTreeRegressor)
+                                            Sklearn
                                     </li>
                                     <li>
                                         <span class="fa-li"><i class="fas fa-check"></i></span>
-                                            arn.ensemble (RandomForestClassifier)
+                                            plotly 
                                     </li>
                                     <li>
                                         <span class="fa-li"><i class="fas fa-check"></i></span>
-                                            sklearn.metrics (mean_squared_error,classification_report)
+                                            flask 
                                     </li>
-                                    <li>
-                                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                                            sklearn.linear_model (Ridge)
-                                    </li>
-                                    <li>
-                                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                                            time
-                                    </li>
-                                    <li>
-                                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                                            sklearn.model_selection (GridSearchCV)
-                                    </li>
-                                    <li>
-                                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                                            matplotlib
-                                    </li>
+                                    
                                 </ul>
                         </div>
 <!--                        <div class="flex-shrink-0"><span class="text-primary">July 2015 - May 2019</span></div>
